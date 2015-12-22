@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{1dd133f7-28e2-4514-b04a-f610792a33ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3DOverlay">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VMTHook.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternSearcher.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DHook.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D9Hook.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D10Hook.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11Hook.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Module.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternSearcher.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="VMTHook.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DHook.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D9Hook.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Module.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -5,7 +5,6 @@
 
 DWORD WINAPI initThread(_In_ LPVOID lpParameter)
 {
-
 	HMODULE myModule = *static_cast<HMODULE*>(lpParameter);
 
 	wchar_t dllPathBuffer[512];
@@ -16,7 +15,6 @@ DWORD WINAPI initThread(_In_ LPVOID lpParameter)
 	Logger::createInstance(dllPath + L"log");
 	Logger::getInstance().setHex(); // Lets make this default
 	Logger::getInstance() << L"Logger class initialized and initThread() called \n";
-	Logger::getInstance() << dllPath << "\n";
 
 	HookD3D();
 
@@ -49,13 +47,13 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-		{
-			HMODULE *module = new HMODULE;
-			*module = hModule;
-			CreateThread(0, 0, &initThread, module, 0, 0);
-			CreateThread(0, 0, &unloadThread, module, 0, 0);
-			break;
-		}	
+	{
+		HMODULE *module = new HMODULE;
+		*module = hModule;
+		CreateThread(0, 0, &initThread, module, 0, 0);
+		CreateThread(0, 0, &unloadThread, module, 0, 0);
+		break;
+	}	
 	case DLL_THREAD_ATTACH:
 	case DLL_THREAD_DETACH:
 	case DLL_PROCESS_DETACH:

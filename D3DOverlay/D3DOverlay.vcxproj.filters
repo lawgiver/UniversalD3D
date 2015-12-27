@@ -39,6 +39,12 @@
       <Filter>D3DOverlay</Filter>
     </ClInclude>
     <ClInclude Include="Module.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>D3DOverlay</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBuffer.h">
       <Filter>D3DOverlay</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,6 +71,12 @@
       <Filter>D3DOverlay</Filter>
     </ClCompile>
     <ClCompile Include="Module.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBuffer.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
       <Filter>D3DOverlay</Filter>
     </ClCompile>
   </ItemGroup>

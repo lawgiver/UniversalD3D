@@ -144,6 +144,8 @@
     <ClInclude Include="D3D10Hook.h" />
     <ClInclude Include="D3D11Hook.h" />
     <ClInclude Include="D3D9Hook.h" />
+    <ClInclude Include="Draw.h" />
+    <ClInclude Include="DrawBuffer.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="Module.h" />
     <ClInclude Include="PatternSearcher.h" />
@@ -167,6 +169,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="DrawBuffer.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Module.cpp" />
     <ClCompile Include="PatternSearcher.cpp" />

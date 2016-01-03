@@ -10,10 +10,10 @@ void HookD3D()
 {
 	// TODO: Decide which version to hook.
 
-	HookD3D9();
+	HookD3D11();
 }
 
 void UnhookD3D()
 {
-	UnhookD3D9();
+	UnhookD3D11();
 }

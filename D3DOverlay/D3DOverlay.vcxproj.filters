@@ -79,5 +79,8 @@
     <ClCompile Include="Draw.cpp">
       <Filter>D3DOverlay</Filter>
     </ClCompile>
+    <ClCompile Include="D3D11Hook.cpp">
+      <Filter>D3DOverlay</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

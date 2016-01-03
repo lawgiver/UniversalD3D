@@ -121,7 +121,9 @@ HRESULT __stdcall D3D9Present_hk(IDirect3DDevice9Ex *device, CONST RECT *pSource
 
 	// Save all States
 	IDirect3DStateBlock9 *stateBlock;
-	//device->CreateStateBlock(D3DSBT_ALL, &stateBlock);
+	device->CreateStateBlock(D3DSBT_ALL, &stateBlock);
+
+	set2DRenderStates(device);
 
 	device->SetVertexShader(NULL);
 	device->SetPixelShader(NULL);
@@ -133,7 +135,7 @@ HRESULT __stdcall D3D9Present_hk(IDirect3DDevice9Ex *device, CONST RECT *pSource
 	device->DrawPrimitiveUP(D3DPT_TRIANGLEFAN, 2, vertices, sizeof(D3DTLVERTEX));
 
 	// Restore all States
-	//stateBlock->Apply();
+	stateBlock->Apply();
 
 	device->EndScene();
 

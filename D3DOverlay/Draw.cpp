@@ -5,7 +5,8 @@
 
 void draw(DrawBuffer &drawBuffer)
 {
-	Color color{255, 255, 255 , 100};
+	drawBuffer.fillZero();
 
-	drawBuffer.drawRectangle(0, 0, drawBuffer.getWidth(), drawBuffer.getHeight(), color);
+	Color color{255, 255, 255 , 100};
+	drawBuffer.drawRectangle(50, 50, 50, 50, color);
 }
